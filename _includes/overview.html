@@ -1,0 +1,30 @@
+<section class="overview-section mb-200">
+    <div class="container mb-5">
+        <div class="row overflow-hidden p-3 text-center">
+            <div class="col-xs-12 col-lg-10 mx-auto">
+                <h6 class="mb-4 overview-section-text">{{site.data.overview.overview}}</h6>
+            </div>
+            <div class="col-xs-12 col-lg-9 mx-auto">
+                <h1 class="display-5 mb-4 overview-section-title">{{site.data.overview.title}}</h1>
+            </div>
+            <div class="col-xs-12 col-lg-6 mx-auto">
+                <p class="lead fw-normal mb-5 overview-section-brief">{{site.data.overview.brief}}</p>
+            </div>
+        </div>
+        <div class="row gy-5 overflow-hidden py-3 justify-content-center">
+            {% for member in site.data.overview.features %}
+            <div class="col-xs-10 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="{{member.imgSrc}}" alt="{{member.name}}">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{member.name}}</h5>
+                        <p class="card-text">{{member.para}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

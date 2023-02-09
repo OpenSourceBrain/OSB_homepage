@@ -1,0 +1,21 @@
+overview: Overview
+title: Closing the loop between experiments and data-driven computational modeling
+brief: Understanding the brain will require gathering and analyzing a huge amount of data on the structure and dynamics of its parts. Computational models can help consolidate this knowledge and provide deeper insights into neuronal function.
+getStarted: Get started
+features: [
+  {
+    name: "Data",
+    para: "OSB links to the best publicly accessible data sources from the global neuroscience community",
+    imgSrc: "img/data.png",
+  },
+  {
+    name: "Models",
+    para: "Computational models from individual cells to whole brains can be built and compared to data using OSB",
+    imgSrc: "img/models.png",
+  },
+  {
+    name: "Analysis Code",
+    para: "Advanced software for analyzing and visualizing data and models is preinstalled on OSB, and you can add your own!",
+    imgSrc: "img/analysis-code.png"
+  },
+]

@@ -1,0 +1,19 @@
+url: https://metacell.github.io
+baseurl: /Website/
+
+# Site settings
+title: OSB
+email: info@modeci.org
+description: ''
+githubLink: ''
+copyright: 2021 Princeton University
+metacellLink: https://metacell.us/
+
+# Collections
+collections:
+  - communities
+  - elements
+
+# Build settings
+markdown: kramdown
+permalink: pretty
