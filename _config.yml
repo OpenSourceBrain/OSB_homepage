@@ -1,12 +1,12 @@
 url: https://metacell.github.io
-baseurl: /Website/
+baseurl: /OSB_homepage/
 
 # Site settings
 title: OSB
-email: info@modeci.org
+email: info@metacell.org
 description: ''
-githubLink: ''
-copyright: 2021 Princeton University
+githubLink: https://github.com/OpenSourceBrain/OSB_homepage
+copyright: 2023 OSB
 metacellLink: https://metacell.us/
 
 # Collections
