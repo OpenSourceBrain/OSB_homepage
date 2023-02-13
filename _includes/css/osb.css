@@ -543,6 +543,26 @@ h1.overview-section-title {
 .features-section .carousel-caption p{
     margin: 0 10px;
 }
+
+.features-section .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-section .carousel-item .carousel-item-content{
+    background: rgba(64, 71, 88, 0.4);
+    box-shadow: 0px -4px 20px #0A101E;
+    backdrop-filter: blur(6px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 12px;
+    border: 1px solid;
+    width: fit-content;
+    padding: 48px 80px 0 80px;
+    background: linear-gradient(180deg, rgba(64, 71, 88, 0.4), rgba(64, 71, 88, 0.4))
+
+}
 /*FEATURES*/
 
 /*GET STARTED*/
