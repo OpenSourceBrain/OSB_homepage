@@ -553,8 +553,16 @@ h1.overview-section-title {
 /*FEATURES*/
 
 /*GET STARTED*/
+.get-started-section {
+    background-image: url("img/getStartedBG.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 .build-future {
-    background: #E5E5E5;
     padding-top: 40px;
     padding-bottom:80px ;
 }
