@@ -127,7 +127,6 @@ p.large {
 .highlighted-btn-container {
     background: url("img/highlighted-btn.svg") no-repeat center;
     padding: 50px;
-
 }
 
 .highlighted-btn>span {
@@ -156,6 +155,13 @@ p.large {
     top: -60%
 }
 
+.transparent-btn {
+    padding: 8px 12px;
+    background: radial-gradient(61.62% 75% at 49.37% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: none;
+    width: auto;
+}
 
 /* start theme */
 
@@ -228,13 +234,6 @@ p.large {
     font-feature-settings: 'ss03' on, 'ss02' on;
     color: #FFFFFF;
     border: none;
-}
-.navbar-right .get-started-link {
-    padding: 8px 12px;
-    background: radial-gradient(61.62% 75% at 49.37% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    border: none;
-    width: auto;
 }
 
 .navbar-fixed-top {
@@ -541,6 +540,16 @@ h1.overview-section-title {
 
 /*FEATURES*/
 
+.features-section .carousel-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.features-section .carousel-caption p{
+    margin: 0 10px;
+}
 /*FEATURES*/
 
 /*GET STARTED*/
