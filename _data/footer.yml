@@ -1,0 +1,64 @@
+PowereBy: Powered by
+Product: Product
+ProductLinks: [
+  {
+    name: "Home",
+    href: "#",
+  },
+  {
+    name: "Overview",
+    href: "#",
+  },
+  {
+    name: "Features",
+    href: "#",
+  },
+  {
+    name: "Cloud-based",
+    href: "#",
+  },
+]
+
+Resources: Resources
+ResourcesLinks: [
+  {
+    name: "Documentation",
+    href: "#",
+  },
+  {
+    name: "Help Center",
+    href: "#",
+  },
+  {
+    name: "Report a problem",
+    href: "#",
+  },
+  {
+    name: "Terms of Service",
+    href: "#",
+  },
+]
+
+GettingStarted: Getting started
+GettingStartedLinks: [
+  {
+    name: "Sign in",
+    href: "#",
+  },
+  {
+    name: "Create an account",
+    href: "#",
+  },
+]
+
+Contact: Contact
+ContactLinks: [
+  {
+    name: "Twitter",
+    href: "#",
+  },
+  {
+    name: "Get in touch",
+    href: "#",
+  },
+]

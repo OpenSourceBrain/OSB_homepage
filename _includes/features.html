@@ -2,53 +2,65 @@
     <div class="container mb-5">
         <div class="row overflow-hidden p-3 text-center">
             <div class="col-xs-12 col-lg-10 mx-auto">
-                <h6 class="mb-4 overview-section-text">FEATURES</h6>
+                <h6 class="mb-4 overview-section-text">{{site.data.features.features}}</h6>
             </div>
             <div class="col-xs-12 col-lg-9 mx-auto">
-                <h1 class="display-5 mb-4 overview-section-title">Explore and analyse data and models in online interactive applications</h1>
+                <h1 class="display-5 mb-4 overview-section-title">{{site.data.features.title}}</h1>
             </div>
             <div class="col-xs-12 col-lg-6 mx-auto">
-                <p class="lead fw-normal mb-5 overview-section-brief">OSB facilitates access to public resources in neuroscience (data, models, code) and allows them to be saved, modified and visualised in a number of interactive applications</p>
+                <p class="lead fw-normal mb-5 overview-section-brief">{{site.data.features.brief}}</p>
             </div>
         </div>
     </div>
 
-    <div class="home-demo">
-        <h3>Carousel</h3>
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <h2>Swipe</h2>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Example headline.</h1>
+                        <p>Some representative placeholder content for the first slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <h2>Drag</h2>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <h2>Responsive</h2>
-            </div>
-            <div class="item">
-                <h2>CSS3</h2>
-            </div>
-            <div class="item">
-                <h2>Fast</h2>
-            </div>
-            <div class="item">
-                <h2>Easy</h2>
-            </div>
-            <div class="item">
-                <h2>Free</h2>
-            </div>
-            <div class="item">
-                <h2>Upgradable</h2>
-            </div>
-            <div class="item">
-                <h2>Tons of options</h2>
-            </div>
-            <div class="item">
-                <h2>Infinity</h2>
-            </div>
-            <div class="item">
-                <h2>Auto Width</h2>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 </section>

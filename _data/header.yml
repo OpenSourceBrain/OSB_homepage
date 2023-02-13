@@ -1,0 +1,19 @@
+login: Login
+links: [
+  {
+    name: "Home",
+    href: "#",
+  },
+  {
+    name: "Docs",
+    href: "#",
+  },
+  {
+    name: "FAQ",
+    href: "#",
+  },
+  {
+    name: "Contact",
+    href: "#",
+  },
+]
