@@ -578,4 +578,8 @@ h1.overview-section-title {
     }
 }
 
+/*::-webkit-scrollbar {*/
+/*    width: 0;*/
+/*}*/
+
 
