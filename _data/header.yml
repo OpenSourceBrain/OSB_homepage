@@ -1,0 +1,19 @@
+login: Login
+links: [
+  {
+    name: "Home",
+    href: "#",
+  },
+  {
+    name: "Docs",
+    href: "https://docs.opensourcebrain.org",
+  },
+  {
+    name: "FAQ",
+    href: "https://docs.opensourcebrain.org/General/FAQ.html",
+  },
+  {
+    name: "Contact",
+    href: "https://docs.opensourcebrain.org/General/Contacts.html",
+  },
+]

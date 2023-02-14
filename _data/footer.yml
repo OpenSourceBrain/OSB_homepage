@@ -1,0 +1,64 @@
+PowereBy: Powered by
+Product: OSBv2
+ProductLinks: [
+  {
+    name: "Home",
+    href: "#",
+  },
+  {
+    name: "Overview",
+    href: "https://docs.opensourcebrain.org/OSBv2/Overview.html",
+  },
+  {
+    name: "Features",
+    href: "https://docs.opensourcebrain.org/OSBv2/Guided_tour.html",
+  },
+  {
+    name: "Events",
+    href: "https://docs.opensourcebrain.org/General/Meetings.html",
+  },
+]
+
+Resources: Resources
+ResourcesLinks: [
+  {
+    name: "Documentation",
+    href: "https://docs.opensourcebrain.org",
+  },
+  {
+    name: "Help Center",
+    href: "https://docs.opensourcebrain.org/General/Contacts.html",
+  },
+  {
+    name: "Report a problem",
+    href: "https://docs.opensourcebrain.org/General/Contacts.html#report-a-bug-request-a-feature",
+  },
+  {
+    name: "Code of Conduct",
+    href: "https://docs.opensourcebrain.org/General/CoC.html",
+  },
+]
+
+GettingStarted: Getting started
+GettingStartedLinks: [
+  {
+    name: "Sign in",
+    href: "#",
+  },
+  {
+    name: "Create an account",
+    href: "#",
+  },
+]
+
+Contact: Contact
+ContactLinks: [
+  {
+    name: "Twitter",
+    href: "https://twitter.com/OSBTeam",
+  },
+  {
+    name: "Get in touch",
+    href: "https://docs.opensourcebrain.org/General/Contacts.html",
+  },
+]

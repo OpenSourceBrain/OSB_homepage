@@ -97,20 +97,75 @@ p.large {
     -webkit-text-fill-color: transparent;
 }
 
+.highlighted-btn {
+    padding: 10px 24px;
+    /* gradient 2 */
+    background: linear-gradient(90.05deg, #88AA00 0.01%, #00BCD4 99.94%);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.15), 0px 8px 8px -4px rgba(0, 0, 0, 0.1), 0px 12px 12px -4px rgba(0, 0, 0, 0.1), inset 0px -2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    border: 0;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    text-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+}
+
+.highlighted-btn:hover {
+    color: #FFFFFF;
+}
+
+.highlighted-btn-container {
+    background: url("img/highlighted-btn.svg") no-repeat center;
+    padding: 50px;
+}
+
+.highlighted-btn>span {
+    border: 1px solid;
+    position: absolute;
+    opacity: 0.2;
+    border-radius: 18px;
+    transform: translate(-50%, -5%);
+    left: 50%;
+    /*border-image-source: linear-gradient(90.05deg, #88AA00 0.01%, #00BCD4 99.94%);*/
+}
+
+.highlighted-btn>span:nth-child(1) {
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    top: -20%;
+}
+.highlighted-btn>span:nth-child(2) {
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    top: -40%
+}
+.highlighted-btn>span:nth-child(3) {
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
+    top: -60%
+}
+
+.transparent-btn {
+    padding: 8px 12px;
+    background: radial-gradient(61.62% 75% at 49.37% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: none;
+    width: auto;
+}
 
 /* start theme */
 
 /*HEADER*/
 
-
-
 .navbar-default {
-
+    background: url("img/header.png");
     background-size: cover;
     background-position: center;
     margin-top: -1px;
     height: 60px;
-    background: rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -123,8 +178,12 @@ p.large {
     margin-top: 6px;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+.navbar-default .navbar-toggle {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle>svg {
+    fill: #fff;
 }
 
 .navbar-menu>li {
@@ -168,13 +227,6 @@ p.large {
     font-feature-settings: 'ss03' on, 'ss02' on;
     color: #FFFFFF;
     border: none;
-}
-.navbar-right .get-started-link {
-    padding: 8px 12px;
-    background: radial-gradient(61.62% 75% at 49.37% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    border: none;
-    width: auto;
 }
 
 .navbar-fixed-top {
@@ -267,6 +319,12 @@ header .container {
 
 /*FIRST SECTION*/
 
+.main-section {
+    margin-top: 36px;
+    background: url("img/mainBG.png") no-repeat center top;
+    min-height: 1115px;
+}
+
 .page-title {
     font-weight: 700;
     font-size: 60px;
@@ -287,56 +345,6 @@ header .container {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.get-started {
-    padding: 8px 24px;
-    /* gradient 2 */
-    background: linear-gradient(90.05deg, #88AA00 0.01%, #00BCD4 99.94%);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.15), 0px 8px 8px -4px rgba(0, 0, 0, 0.1), 0px 12px 12px -4px rgba(0, 0, 0, 0.1), inset 0px -2px 2px rgba(0, 0, 0, 0.15);
-    border-radius: 12px;
-    border: 0;
-    color: #FFFFFF;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 32px;
-    text-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.4);
-}
-
-.highlighted-btn-container {
-    background: url("img/highlighted-btn.svg") no-repeat center;
-    padding: 50px;
-
-}
-
-.get-started>span {
-    border: 1px solid;
-    position: absolute;
-    opacity: 0.2;
-    border-radius: 18px;
-    transform: translate(-50%, -5%);
-    left: 50%;
-    /*border-image-source: linear-gradient(90.05deg, #88AA00 0.01%, #00BCD4 99.94%);*/
-}
-
-.get-started>span:nth-child(1) {
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    top: -20%;
-}
-.get-started>span:nth-child(2) {
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
-    top: -40%
-}
-.get-started>span:nth-child(3) {
-    width: calc(100% + 60px);
-    height: calc(100% + 60px);
-    top: -60%
-}
-
-/*FIRST SECTION*/
-/*FIRST SECTION*/
 
 /*FOOTER*/
 
@@ -465,7 +473,10 @@ h1.overview-section-title {
 }
 
 .cloud-base-section {
-    background: url("img/cloudBaseBG.png") no-repeat center;
+    background-image: url("img/cloudBaseBG.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 80%;
 }
 
 .cloud-base-section .cloud-base-title {
@@ -522,11 +533,49 @@ h1.overview-section-title {
 
 /*FEATURES*/
 
+.features-section .carousel-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.features-section .carousel-caption p{
+    margin: 0 10px;
+}
+
+.features-section .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-section .carousel-item .carousel-item-content{
+    background: rgba(64, 71, 88, 0.4);
+    box-shadow: 0px -4px 20px #0A101E;
+    backdrop-filter: blur(6px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 12px;
+    border: 1px solid;
+    width: fit-content;
+    padding: 48px 80px 0 80px;
+    background: linear-gradient(180deg, rgba(64, 71, 88, 0.4), rgba(64, 71, 88, 0.4))
+
+}
 /*FEATURES*/
 
 /*GET STARTED*/
+.get-started-section {
+    background-image: url("img/getStartedBG.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 .build-future {
-    background: #E5E5E5;
     padding-top: 40px;
     padding-bottom:80px ;
 }
@@ -552,3 +601,13 @@ h1.overview-section-title {
 
 /*GET STARTED*/
 /* end theme */
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1100px;
+    }
+}
+
+/*::-webkit-scrollbar {*/
+/*    width: 0;*/
+/*}*/
