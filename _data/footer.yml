@@ -1,5 +1,5 @@
 PowereBy: Powered by
-Product: Product
+Product: OSBv2
 ProductLinks: [
   {
     name: "Home",
@@ -7,15 +7,15 @@ ProductLinks: [
   },
   {
     name: "Overview",
-    href: "#",
+    href: "https://docs.opensourcebrain.org/OSBv2/Overview.html",
   },
   {
     name: "Features",
-    href: "#",
+    href: "https://docs.opensourcebrain.org/OSBv2/Guided_tour.html",
   },
   {
-    name: "Cloud-based",
-    href: "#",
+    name: "Events",
+    href: "https://docs.opensourcebrain.org/General/Meetings.html",
   },
 ]
 
@@ -23,19 +23,19 @@ Resources: Resources
 ResourcesLinks: [
   {
     name: "Documentation",
-    href: "#",
+    href: "https://docs.opensourcebrain.org",
   },
   {
     name: "Help Center",
-    href: "#",
+    href: "https://docs.opensourcebrain.org/General/Contacts.html",
   },
   {
     name: "Report a problem",
-    href: "#",
+    href: "https://docs.opensourcebrain.org/General/Contacts.html#report-a-bug-request-a-feature",
   },
   {
-    name: "Terms of Service",
-    href: "#",
+    name: "Code of Conduct",
+    href: "https://docs.opensourcebrain.org/General/CoC.html",
   },
 ]
 
@@ -55,10 +55,10 @@ Contact: Contact
 ContactLinks: [
   {
     name: "Twitter",
-    href: "#",
+    href: "https://twitter.com/OSBTeam",
   },
   {
     name: "Get in touch",
-    href: "#",
+    href: "https://docs.opensourcebrain.org/General/Contacts.html",
   },
 ]
