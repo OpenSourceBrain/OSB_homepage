@@ -6,14 +6,14 @@ links: [
   },
   {
     name: "Docs",
-    href: "#",
+    href: "https://docs.opensourcebrain.org",
   },
   {
     name: "FAQ",
-    href: "#",
+    href: "https://docs.opensourcebrain.org/General/FAQ.html",
   },
   {
     name: "Contact",
-    href: "#",
+    href: "https://docs.opensourcebrain.org/General/Contacts.html",
   },
 ]
