@@ -1,9 +1,9 @@
 PowereBy: Powered by
-Product: OSBv2
+Product: OSB Platform
 ProductLinks: [
   {
     name: "Home",
-    href: "#",
+    href: "https://v2.opensourcebrain.org",
   },
   {
     name: "Overview",
@@ -16,6 +16,10 @@ ProductLinks: [
   {
     name: "Events",
     href: "https://docs.opensourcebrain.org/General/Meetings.html",
+  },
+  {
+    name: "OSBv1",
+    href: "https://www.opensourcebrain.org",
   },
 ]
 
@@ -42,12 +46,16 @@ ResourcesLinks: [
 GettingStarted: Getting started
 GettingStartedLinks: [
   {
-    name: "Sign in",
-    href: "#",
+    name: "Guided Tour",
+    href: "https://docs.opensourcebrain.org/OSBv2/Guided_tour.html",
   },
   {
-    name: "Create an account",
-    href: "#",
+    name: "Browse repositories",
+    href: "https://v2.opensourcebrain.org/repositories",
+  },
+  {
+    name: "Browse workspaces",
+    href: "https://v2.opensourcebrain.org",
   },
 ]
 

@@ -1,4 +1,5 @@
 login: Login
+loginLink: https://v2.opensourcebrain.org
 links: [
   {
     name: "Home",
