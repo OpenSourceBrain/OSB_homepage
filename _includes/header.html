@@ -24,13 +24,13 @@
             <ul class="navbar-nav me-auto mx-auto mb-2 mb-md-0 navbar-menu">
                 {% for link in site.data.header.links %}
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href={{link.href}}>{{link.name}}</a>
+                    <a class="nav-link" aria-current="page" href='{{link.href}}' target="_blank">{{link.name}}</a>
                 </li>
                 {% endfor %}
             </ul>
             <div class="d-flex navbar-right" role="search">
-                <button type="button" class="btn btn-outline-primary me-2 login-link">{{site.data.header.login}}</button>
-                <button type="button" class="btn btn-primary transparent-btn">{{site.data.main.getStarted}}</button>
+                <a class="login-link" >{{site.data.header.login}}</a>
+                <a class="transparent-btn">{{site.data.main.getStarted}}</a>
             </div>
         </div>
     </div>

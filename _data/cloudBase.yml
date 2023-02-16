@@ -1,3 +1,8 @@
 title: CLOUD-BASED
 brief: Access from anywhere. It's all in the cloud.
 desc: Open Source Brain improves the accessibility, transparency, and reproducibility of models and facilitates their reuse by the wider community.
+Repositories: Repositories
+RepositoriesDesc: contain data and models from community-shared resources like GitHub, Figshare and DANDI
+Workspaces: Workspaces
+WorkspacesDesc: are persistent online spaces where users can carry out and save their work. They can be private or shared with the community
+Applications: Open your workspaces in any of the supported OSB applications, such as NWB Explorer, NetPyNE and JupyterLab

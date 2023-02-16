@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
 <!--    <link rel="icon" href="/OSB_homepage//img/favicon.ico" type="image/x-icon" />-->
-    <link rel="canonical" href="http://0.0.0.0:4000/OSB_homepage//">
+    <link rel="canonical" href="http://localhost:4000/OSB_homepage//">
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -49,25 +49,25 @@
             <ul class="navbar-nav me-auto mx-auto mb-2 mb-md-0 navbar-menu">
                 
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href=#>Home</a>
+                    <a class="nav-link" aria-current="page" href='#' target="_blank">Home</a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href=https://docs.opensourcebrain.org>Docs</a>
+                    <a class="nav-link" aria-current="page" href='https://docs.opensourcebrain.org' target="_blank">Docs</a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href=https://docs.opensourcebrain.org/General/FAQ.html>FAQ</a>
+                    <a class="nav-link" aria-current="page" href='https://docs.opensourcebrain.org/General/FAQ.html' target="_blank">FAQ</a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href=https://docs.opensourcebrain.org/General/Contacts.html>Contact</a>
+                    <a class="nav-link" aria-current="page" href='https://docs.opensourcebrain.org/General/Contacts.html' target="_blank">Contact</a>
                 </li>
                 
             </ul>
             <div class="d-flex navbar-right" role="search">
-                <button type="button" class="btn btn-outline-primary me-2 login-link">Login</button>
-                <button type="button" class="btn btn-primary transparent-btn">Get started</button>
+                <a class="login-link" >Login</a>
+                <a class="transparent-btn">Get started</a>
             </div>
         </div>
     </div>
@@ -83,24 +83,30 @@
             <div class="col-xs-12 col-md-6 text-center">
                 <p class="lead fw-normal mb-5 brief">Open Source Brain is a resource for sharing data and analysis techniques in neuroscience and collaboratively developing computational models of neural systems</p>
             </div>
-        </div>
-        <div class='highlighted-btn-container'>
-            <a class="highlighted-btn" href="#">Get started</a>
-        </div>
+            <div class="col-xs-12">
+                <div class='highlighted-btn-container mb-70'>
+                    <a class="highlighted-btn" href="#">Get started</a>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="workspaces-list-container">
+                    <img src="img/workspacesList.png">
+                </div>
+            </div>
+            </div>
     </div>
-
 </header>
 
     <section class="overview-section mb-200">
     <div class="container mb-5">
         <div class="row overflow-hidden p-3 text-center">
-            <div class="col-xs-12 col-lg-10 mx-auto">
+            <div class="col-xs-12 col-lg-10 col-xl-12 mx-auto">
                 <h6 class="mb-4 overview-section-text">Overview</h6>
             </div>
-            <div class="col-xs-12 col-lg-9 mx-auto">
+            <div class="col-xs-12 col-lg-9 col-xl-12 mx-auto">
                 <h1 class="display-5 mb-4 overview-section-title">Closing the loop between experiments and data-driven computational modeling</h1>
             </div>
-            <div class="col-xs-12 col-lg-6 mx-auto">
+            <div class="col-xs-12 col-lg-6 col-xl-12 mx-auto">
                 <p class="lead fw-normal mb-5 overview-section-brief">Understanding the brain will require gathering and analyzing a huge amount of data on the structure and dynamics of its parts. Computational models can help consolidate this knowledge and provide deeper insights into neuronal function.</p>
             </div>
         </div>
@@ -147,29 +153,33 @@
 </section>
 
     <section class="cloud-base-section mb-200">
-    <div class="container mb-5">
-        <div class="row gy-5 overflow-hidden py-3 justify-content-between">
-            <div class="col-xs-0 col-md-6 col-lg-6 ">
-            </div>
-            <div class="col-xs-10 col-md-6 col-lg-5">
-                <div class="row overflow-hidden p-3 text-start">
-                    <div class="col-xs-12">
-                        <h6 class="mb-4 cloud-base-title">CLOUD-BASED</h6>
-                    </div>
-                    <div class="col-xs-12">
-                        <h6 class="display-5 mb-4 cloud-base-description">Access from anywhere. It's all in the cloud.</h6>
-                    </div>
-                    <div class="col-xs-12">
-                        <span class="lead fw-normal mb-5 overview-section-brief">Open Source Brain improves the accessibility, transparency, and reproducibility of models and facilitates their reuse by the wider community.</span>
+    <div class="cloud-base-section-top">
+        <div class="container">
+            <div class="row gy-5 overflow-hidden py-3 justify-content-between">
+                <div class="col-xs-0 col-md-6 col-lg-6 ">
+                </div>
+                <div class="col-xs-10 col-md-6 col-lg-5">
+                    <div class="row overflow-hidden p-3 text-start">
+                        <div class="col-xs-12">
+                            <h6 class="mb-4 cloud-base-title">CLOUD-BASED</h6>
+                        </div>
+                        <div class="col-xs-12">
+                            <h6 class="display-5 mb-4 cloud-base-description">Access from anywhere. It's all in the cloud.</h6>
+                        </div>
+                        <div class="col-xs-12">
+                            <span class="lead fw-normal mb-5 overview-section-brief">Open Source Brain improves the accessibility, transparency, and reproducibility of models and facilitates their reuse by the wider community.</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-        <div class="divider"></div>
     </div>
 
+
     <div class="container mb-5 features">
+        <div class="divider mb-5"></div>
+
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
             <div class="col-xs-12 col-lg-4 d-flex align-items-start feature-card">
 
@@ -190,7 +200,7 @@
                     <path d="M11.9333 1H9.4C9.02663 1 8.83995 1 8.69734 1.07266C8.5719 1.13658 8.46991 1.23856 8.406 1.36401C8.33333 1.50661 8.33333 1.6933 8.33333 2.06667V4.6C8.33333 4.97337 8.33333 5.16005 8.406 5.30266C8.46991 5.4281 8.5719 5.53009 8.69734 5.594C8.83995 5.66667 9.02663 5.66667 9.4 5.66667H11.9333C12.3067 5.66667 12.4934 5.66667 12.636 5.594C12.7614 5.53009 12.8634 5.4281 12.9273 5.30266C13 5.16005 13 4.97337 13 4.6V2.06667C13 1.6933 13 1.50661 12.9273 1.36401C12.8634 1.23856 12.7614 1.13658 12.636 1.07266C12.4934 1 12.3067 1 11.9333 1Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M11.9333 8.33333H9.4C9.02663 8.33333 8.83995 8.33333 8.69734 8.406C8.5719 8.46991 8.46991 8.5719 8.406 8.69734C8.33333 8.83995 8.33333 9.02663 8.33333 9.4V11.9333C8.33333 12.3067 8.33333 12.4934 8.406 12.636C8.46991 12.7614 8.5719 12.8634 8.69734 12.9273C8.83995 13 9.02663 13 9.4 13H11.9333C12.3067 13 12.4934 13 12.636 12.9273C12.7614 12.8634 12.8634 12.7614 12.9273 12.636C13 12.4934 13 12.3067 13 11.9333V9.4C13 9.02663 13 8.83995 12.9273 8.69734C12.8634 8.5719 12.7614 8.46991 12.636 8.406C12.4934 8.33333 12.3067 8.33333 11.9333 8.33333Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M4.6 8.33333H2.06667C1.6933 8.33333 1.50661 8.33333 1.36401 8.406C1.23856 8.46991 1.13658 8.5719 1.07266 8.69734C1 8.83995 1 9.02663 1 9.4V11.9333C1 12.3067 1 12.4934 1.07266 12.636C1.13658 12.7614 1.23856 12.8634 1.36401 12.9273C1.50661 13 1.6933 13 2.06667 13H4.6C4.97337 13 5.16005 13 5.30266 12.9273C5.4281 12.8634 5.53009 12.7614 5.594 12.636C5.66667 12.4934 5.66667 12.3067 5.66667 11.9333V9.4C5.66667 9.02663 5.66667 8.83995 5.594 8.69734C5.53009 8.5719 5.4281 8.46991 5.30266 8.406C5.16005 8.33333 4.97337 8.33333 4.6 8.33333Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg> <span>Applications</span> Open your workspaces in any of the supported OSB applications, such as NWB Explorer, NetPyNE and JupyterLab</p>
+                </svg> <span>Open your workspaces in any of the supported OSB applications, such as NWB Explorer, NetPyNE and JupyterLab</span> </p>
             </div>
         </div>
     </div>
@@ -210,69 +220,7 @@
             </div>
         </div>
 
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active text-center">
-                    <div class="carousel-item-content">
-                        <img src="img/slider1.png" class="img-responsive center-block" alt="...">
-                    </div>
 
-                    <div class="carousel-caption">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g filter="url(#filter0_d_357_324)">
-                                    <rect x="4" y="4" width="40" height="40" rx="12" fill="white"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5212 15.4575L24.8953 17.9578C27.5476 18.2028 29.6874 20.2699 30.1165 22.9289H36V24.896H30.1165C29.7092 27.4198 27.761 29.4103 25.296 29.8158L25.2411 31.5163L27.8426 32.8888L26.9648 34.638L25.1709 33.6915L25.0284 39L23.1109 38.9349L23.1613 36.4779L20.7149 38.793L19.4137 37.3475L23.2505 33.7165L23.3767 29.8059C21.4907 29.4755 19.9143 28.216 19.1103 26.5028L16.5607 29.7759L12 28.3427L12.5622 26.4619L15.8757 27.5032L18.2625 24.439L15.8677 21.6974L17.2969 20.3851L18.8051 22.1117C19.4132 20.1345 20.9961 18.601 22.9762 18.1044L22.619 15.7173L19.3491 13.6105L20.3698 11.9449L23.353 13.8669L27.9553 9L29.3327 10.3693L24.5212 15.4575ZM24.3655 19.9006C24.2853 19.9006 24.2058 19.903 24.1271 19.9079C22.079 20.0337 20.4546 21.7786 20.4546 23.9125C20.4546 24.046 20.4609 24.1777 20.4732 24.3074C20.666 26.3376 22.336 27.9244 24.3655 27.9244C26.5251 27.9244 28.2764 26.1286 28.2764 23.9125C28.2764 21.6964 26.5251 19.9006 24.3655 19.9006Z" fill="#EB517A"/>
-                                </g>
-                                <defs>
-                                    <filter id="filter0_d_357_324" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                        <feMorphology radius="4" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_357_324"/>
-                                        <feOffset/>
-                                        <feComposite in2="hardAlpha" operator="out"/>
-                                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.15 0"/>
-                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_357_324"/>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_357_324" result="shape"/>
-                                    </filter>
-                                </defs>
-                            </svg>
-                            <p class="text-start">
-                                NetPyNE. Develop, simulate and analyse detailed neuronal network models using an intuitive graphical user interface.
-                            </p>
-                            <button type="button" class="btn btn-primary transparent-btn">Learn more</button>
-
-                        </div>
-
-                </div>
-<!--                <div class="carousel-item text-center">-->
-<!--                    <img src="img/slider1.png" class="img-responsive center-block" alt="...">-->
-<!--                    <div class="carousel-caption d-none d-md-block">-->
-<!--                        <p>Some representative placeholder content for the second slide.</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="carousel-item text-center">-->
-<!--                    <img src="img/slider1.png" class="img-responsive center-block" alt="...">-->
-<!--                    <div class="carousel-caption d-none d-md-block">-->
-<!--                        <p>Some representative placeholder content for the third slide.</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="40" rx="20" fill="white" fill-opacity="0.1"/>
-                    <path d="M23 14L17 20L23 26" stroke="white" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="40" rx="20" fill="white" fill-opacity="0.1"/>
-                    <path d="M17 26L23 20L17 14" stroke="white" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
     </div>
 
 
