@@ -29,8 +29,8 @@
                 {% endfor %}
             </ul>
             <div class="d-flex navbar-right" role="search">
-                <button type="button" class="btn btn-outline-primary me-2 login-link">{{site.data.header.login}}</button>
-                <button type="button" class="btn btn-primary transparent-btn">{{site.data.main.getStarted}}</button>
+                <button type="button" onclick="location.href='{{site.data.header.loginLink}}'" class="btn btn-outline-primary me-2 login-link">{{site.data.header.login}}</button>
+                <button type="button" onclick="location.href='{{site.data.main.getStartedLink}}'" class="btn btn-primary transparent-btn">{{site.data.main.getStarted}}</button>
             </div>
         </div>
     </div>
