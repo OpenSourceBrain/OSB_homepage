@@ -185,7 +185,7 @@ p.large {
 
 .nav-link:focus, .nav-link:hover {
     opacity: 0.9;
-    
+
 }
 
 .transparent-btn:hover {
@@ -619,7 +619,7 @@ h1.overview-section-title {
     left: 0;
     right: 0;
     bottom: -20px;
-    box-shadow: inset 0px -54px 40px 0px #0b111e, 0px 14px 40px 0px #0b111e;
+    /* box-shadow: inset 0px -54px 40px 0px #0b111e, 0px 14px 40px 0px #0b111e; */
     color: #FFFFFF;
 }
 .features-section .carousel-caption p{
