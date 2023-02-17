@@ -327,7 +327,7 @@ header .container {
 
 .main-section {
     margin-top: 36px;
-    background: url(img/mainBG1.png);
+    background: url(img/Framebg.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -496,6 +496,7 @@ h1.overview-section-title {
 
 /*CLOUD-BASE*/
 
+
 .divider{
     height: 1px;
     content: '';
@@ -509,12 +510,12 @@ h1.overview-section-title {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFFFF', GradientType=1 );
 }
 
-.cloud-base-section .cloud-base-section-top {
-    background-image: url(img/cloudBase1.png);
-    background-repeat: no-repeat;
-    /*background-size: contain;*/
-    background-position: top;
-}
+/*.cloud-base-section .cloud-base-section-top {*/
+/*    background-image: url(img/cloudBaseBG.png);*/
+/*    background-repeat: no-repeat;*/
+/*    !*background-size: cover;*!*/
+/*    background-position-y: center;*/
+/*}*/
 
 .cloud-base-section .cloud-base-title {
     font-weight: 700;
@@ -570,6 +571,13 @@ h1.overview-section-title {
 
 /*FEATURES*/
 
+.features-section {
+    background-image: url(img/carouselBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .features-section .carousel-caption {
     display: flex;
     align-items: center;
@@ -581,11 +589,6 @@ h1.overview-section-title {
     margin: 0 10px;
 }
 
-.features-section .carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .features-section .carousel-item .carousel-item-content{
     background: rgba(64, 71, 88, 0.4);
@@ -599,6 +602,14 @@ h1.overview-section-title {
     padding: 48px 80px 0 80px;
     -webkit-mask-image: -webkit-gradient(linear, left 60%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
 
+}
+
+.features-section .carousel-control-prev {
+   left: -15%;
+}
+
+.features-section .carousel-control-next {
+    right: -15%;
 }
 /*FEATURES*/
 
