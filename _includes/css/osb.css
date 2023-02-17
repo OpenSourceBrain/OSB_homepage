@@ -117,7 +117,7 @@ p.large {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.15), 0px 8px 8px -4px rgba(0, 0, 0, 0.1), 0px 12px 12px -4px rgba(0, 0, 0, 0.1), inset 0px -2px 2px rgba(0, 0, 0, 0.15);
 }
 
-.highlighted-btn:hover {
+.highlighted-btn:hover, .highlighted-btn:active {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%),
     linear-gradient(90.05deg, #88AA00 0.01%, #00BCD4 99.94%);
@@ -344,8 +344,8 @@ header .container {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    -webkit-mask-image: -webkit-gradient(linear, left 60%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    -moz-box-shadow: inset 0 -54px 0px 0px #000000;
+    -webkit-mask-image: -webkit-gradient(linear, left 92%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    -moz-box-shadow: inset 0 -54px 0px 0px #0b111e;
     box-shadow: inset 0 -54px 0px 0px #0b111e;
 
 }
@@ -560,6 +560,10 @@ h1.overview-section-title {
     color: #FFFFFF;
 }
 
+.feature-card>p>span:last-child{
+   color: rgba(255,255,255, .8);
+}
+
 /*CLOUD-BASE*/
 
 /*FEATURES*/
@@ -569,12 +573,36 @@ h1.overview-section-title {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    -webkit-mask-image: -webkit-gradient(linear, left 94%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    -moz-box-shadow: inset 0 -54px 0px 0px #0b111e;
+    box-shadow: inset 0 -54px 0px 0px #0b111e;
+}
+
+
+.features-section .carousel-item{
+    padding: 40px 80px;
 }
 
 .features-section .carousel-caption {
     display: flex;
     align-items: center;
     justify-content: center;
+    right: auto;
+    left: auto;
+    width: 80%;
+    color: #FFFFFF;
+}
+.features-section .carousel-caption p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.features-section .carousel-caption p>span:last-child{
+    color: rgba(255, 255, 255, 0.8);
+}
+.features-section .carousel-caption .transparent-btn {
+   margin: 0;
 }
 
 
