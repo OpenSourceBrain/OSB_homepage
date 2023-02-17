@@ -184,8 +184,8 @@ p.large {
 }
 
 .nav-link:focus, .nav-link:hover {
-    color: #fff;
     opacity: 0.9;
+    
 }
 
 .transparent-btn:hover {
@@ -231,7 +231,7 @@ p.large {
     padding: 4px 12px;
 }
 
-.navbar-menu>li>a{
+.navbar  .navbar-menu>li>a{
     color: rgba(255, 255, 255, 0.8);
     font-weight: 500;
     font-size: 16px;
@@ -239,6 +239,8 @@ p.large {
     letter-spacing: 0.01em;
     font-feature-settings: 'ss03' on, 'ss02' on;
 }
+
+
 
 
 .navbar-right {
