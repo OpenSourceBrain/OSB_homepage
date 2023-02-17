@@ -183,6 +183,11 @@ p.large {
     width: fit-content;
 }
 
+.transparent-btn:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
 /* start theme */
 
 /*HEADER*/
