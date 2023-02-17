@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>OSB</title>
+    <title>Open Source Brain</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
-<!--    <link rel="icon" href="/OSB_homepage/img/favicon.ico" type="image/x-icon" />-->
+    <link rel="icon" href="/OSB_homepage/img/favicon.ico" type="image/x-icon" />
     <link rel="canonical" href="http://localhost:4000/OSB_homepage/">
+
+    
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -15,6 +17,7 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
+    /favicon.ico
 
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -66,7 +69,7 @@
                 
             </ul>
             <div class="d-flex navbar-right" role="search">
-                <a class="login-link" >Login</a>
+                <a class="login-link d-none" >Login</a>
                 <a class="transparent-btn">Get started</a>
             </div>
         </div>
@@ -156,13 +159,13 @@
     <div class="cloud-base-section-top">
         <div class="container">
             <div class="row gy-5 overflow-hidden py-3 justify-content-between">
-                <div class="col-xs-0 col-md-6 col-lg-6">
+                <div class="col-xs-0 col-md-6 col-lg-8">
                     <div>
-                        <img  src="img/cloud-based.png">
+                        <img width="100%" src="img/cloud-based.png">
 
                     </div>
                 </div>
-                <div class="col-xs-10 col-md-6 col-lg-5">
+                <div class="col-xs-10 col-md-6 col-lg-4">
                     <div class="row overflow-hidden p-3 text-start">
                         <div class="col-xs-12">
                             <h6 class="mb-4 cloud-base-title">CLOUD-BASED</h6>
@@ -210,7 +213,8 @@
     </div>
 </section>
 
-    <section class="features-section">
+    <div class="layout-bottom">
+      <section id="features-section">
     <div class="container">
         <div class="row overflow-hidden p-3 text-center">
             <div class="col-xs-12 col-lg-10 mx-auto">
@@ -223,117 +227,157 @@
                 <p class="lead fw-normal mb-5 overview-section-brief">OSB facilitates access to public resources in neuroscience (data, models, code) and allows them to be saved, modified and visualised in a number of interactive applications</p>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="carousel-wrapper">
 
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/cloud-based.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-flex">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g filter="url(#filter0_d_357_324)">
-                                <rect x="4" y="4" width="40" height="40" rx="12" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5212 15.4575L24.8953 17.9578C27.5476 18.2028 29.6874 20.2699 30.1165 22.9289H36V24.896H30.1165C29.7092 27.4198 27.761 29.4103 25.296 29.8158L25.2411 31.5163L27.8426 32.8888L26.9648 34.638L25.1709 33.6915L25.0284 39L23.1109 38.9349L23.1613 36.4779L20.7149 38.793L19.4137 37.3475L23.2505 33.7165L23.3767 29.8059C21.4907 29.4755 19.9143 28.216 19.1103 26.5028L16.5607 29.7759L12 28.3427L12.5622 26.4619L15.8757 27.5032L18.2625 24.439L15.8677 21.6974L17.2969 20.3851L18.8051 22.1117C19.4132 20.1345 20.9961 18.601 22.9762 18.1044L22.619 15.7173L19.3491 13.6105L20.3698 11.9449L23.353 13.8669L27.9553 9L29.3327 10.3693L24.5212 15.4575ZM24.3655 19.9006C24.2853 19.9006 24.2058 19.903 24.1271 19.9079C22.079 20.0337 20.4546 21.7786 20.4546 23.9125C20.4546 24.046 20.4609 24.1777 20.4732 24.3074C20.666 26.3376 22.336 27.9244 24.3655 27.9244C26.5251 27.9244 28.2764 26.1286 28.2764 23.9125C28.2764 21.6964 26.5251 19.9006 24.3655 19.9006Z" fill="#EB517A"/>
-                            </g>
-                            <defs>
-                                <filter id="filter0_d_357_324" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                    <feMorphology radius="4" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_357_324"/>
-                                    <feOffset/>
-                                    <feComposite in2="hardAlpha" operator="out"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.15 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_357_324"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_357_324" result="shape"/>
-                                </filter>
-                            </defs>
-                        </svg>
-                        <p class="text-start">
-                            NetPyNE. Develop, simulate and analyse detailed neuronal network models using an intuitive graphical user interface.
-                        </p>
-                        <a class="transparent-btn">Learn more</a>
+
+            <div id="applications-carousel" class="carousel carousel-dark">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-item-inner">
+                            <img src="img/slider1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-flex">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_357_324)">
+                                        <rect x="4" y="4" width="40" height="40" rx="12" fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.5212 15.4575L24.8953 17.9578C27.5476 18.2028 29.6874 20.2699 30.1165 22.9289H36V24.896H30.1165C29.7092 27.4198 27.761 29.4103 25.296 29.8158L25.2411 31.5163L27.8426 32.8888L26.9648 34.638L25.1709 33.6915L25.0284 39L23.1109 38.9349L23.1613 36.4779L20.7149 38.793L19.4137 37.3475L23.2505 33.7165L23.3767 29.8059C21.4907 29.4755 19.9143 28.216 19.1103 26.5028L16.5607 29.7759L12 28.3427L12.5622 26.4619L15.8757 27.5032L18.2625 24.439L15.8677 21.6974L17.2969 20.3851L18.8051 22.1117C19.4132 20.1345 20.9961 18.601 22.9762 18.1044L22.619 15.7173L19.3491 13.6105L20.3698 11.9449L23.353 13.8669L27.9553 9L29.3327 10.3693L24.5212 15.4575ZM24.3655 19.9006C24.2853 19.9006 24.2058 19.903 24.1271 19.9079C22.079 20.0337 20.4546 21.7786 20.4546 23.9125C20.4546 24.046 20.4609 24.1777 20.4732 24.3074C20.666 26.3376 22.336 27.9244 24.3655 27.9244C26.5251 27.9244 28.2764 26.1286 28.2764 23.9125C28.2764 21.6964 26.5251 19.9006 24.3655 19.9006Z"
+                                            fill="#EB517A" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d_357_324" x="0" y="0" width="48" height="48"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feMorphology radius="4" operator="dilate" in="SourceAlpha"
+                                                result="effect1_dropShadow_357_324" />
+                                            <feOffset />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.15 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_357_324" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_357_324"
+                                                result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <p class="text-start">
+                                    NetPyNE. Develop, simulate and analyse detailed neuronal network models using an
+                                    intuitive graphical user interface.
+                                </p>
+                                <a class="transparent-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/cloud-based.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-flex">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_357_324)">
+                                    <rect x="4" y="4" width="40" height="40" rx="12" fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M24.5212 15.4575L24.8953 17.9578C27.5476 18.2028 29.6874 20.2699 30.1165 22.9289H36V24.896H30.1165C29.7092 27.4198 27.761 29.4103 25.296 29.8158L25.2411 31.5163L27.8426 32.8888L26.9648 34.638L25.1709 33.6915L25.0284 39L23.1109 38.9349L23.1613 36.4779L20.7149 38.793L19.4137 37.3475L23.2505 33.7165L23.3767 29.8059C21.4907 29.4755 19.9143 28.216 19.1103 26.5028L16.5607 29.7759L12 28.3427L12.5622 26.4619L15.8757 27.5032L18.2625 24.439L15.8677 21.6974L17.2969 20.3851L18.8051 22.1117C19.4132 20.1345 20.9961 18.601 22.9762 18.1044L22.619 15.7173L19.3491 13.6105L20.3698 11.9449L23.353 13.8669L27.9553 9L29.3327 10.3693L24.5212 15.4575ZM24.3655 19.9006C24.2853 19.9006 24.2058 19.903 24.1271 19.9079C22.079 20.0337 20.4546 21.7786 20.4546 23.9125C20.4546 24.046 20.4609 24.1777 20.4732 24.3074C20.666 26.3376 22.336 27.9244 24.3655 27.9244C26.5251 27.9244 28.2764 26.1286 28.2764 23.9125C28.2764 21.6964 26.5251 19.9006 24.3655 19.9006Z"
+                                        fill="#EB517A" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_357_324" x="0" y="0" width="48" height="48"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feMorphology radius="4" operator="dilate" in="SourceAlpha"
+                                            result="effect1_dropShadow_357_324" />
+                                        <feOffset />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.15 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_357_324" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_357_324"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                            <p class="text-start">
+                                NetPyNE. Develop, simulate and analyse detailed neuronal network models using an
+                                intuitive graphical user interface.
+                            </p>
+                            <a class="transparent-btn">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cloud-based.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-flex">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_357_324)">
+                                    <rect x="4" y="4" width="40" height="40" rx="12" fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M24.5212 15.4575L24.8953 17.9578C27.5476 18.2028 29.6874 20.2699 30.1165 22.9289H36V24.896H30.1165C29.7092 27.4198 27.761 29.4103 25.296 29.8158L25.2411 31.5163L27.8426 32.8888L26.9648 34.638L25.1709 33.6915L25.0284 39L23.1109 38.9349L23.1613 36.4779L20.7149 38.793L19.4137 37.3475L23.2505 33.7165L23.3767 29.8059C21.4907 29.4755 19.9143 28.216 19.1103 26.5028L16.5607 29.7759L12 28.3427L12.5622 26.4619L15.8757 27.5032L18.2625 24.439L15.8677 21.6974L17.2969 20.3851L18.8051 22.1117C19.4132 20.1345 20.9961 18.601 22.9762 18.1044L22.619 15.7173L19.3491 13.6105L20.3698 11.9449L23.353 13.8669L27.9553 9L29.3327 10.3693L24.5212 15.4575ZM24.3655 19.9006C24.2853 19.9006 24.2058 19.903 24.1271 19.9079C22.079 20.0337 20.4546 21.7786 20.4546 23.9125C20.4546 24.046 20.4609 24.1777 20.4732 24.3074C20.666 26.3376 22.336 27.9244 24.3655 27.9244C26.5251 27.9244 28.2764 26.1286 28.2764 23.9125C28.2764 21.6964 26.5251 19.9006 24.3655 19.9006Z"
+                                        fill="#EB517A" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_357_324" x="0" y="0" width="48" height="48"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feMorphology radius="4" operator="dilate" in="SourceAlpha"
+                                            result="effect1_dropShadow_357_324" />
+                                        <feOffset />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.15 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_357_324" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_357_324"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                            <p class="text-start">
+                                NetPyNE. Develop, simulate and analyse detailed neuronal network models using an
+                                intuitive graphical user interface.
+                            </p>
+                            <a class="transparent-btn">Learn more</a>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/cloud-based.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-flex">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g filter="url(#filter0_d_357_324)">
-                                <rect x="4" y="4" width="40" height="40" rx="12" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5212 15.4575L24.8953 17.9578C27.5476 18.2028 29.6874 20.2699 30.1165 22.9289H36V24.896H30.1165C29.7092 27.4198 27.761 29.4103 25.296 29.8158L25.2411 31.5163L27.8426 32.8888L26.9648 34.638L25.1709 33.6915L25.0284 39L23.1109 38.9349L23.1613 36.4779L20.7149 38.793L19.4137 37.3475L23.2505 33.7165L23.3767 29.8059C21.4907 29.4755 19.9143 28.216 19.1103 26.5028L16.5607 29.7759L12 28.3427L12.5622 26.4619L15.8757 27.5032L18.2625 24.439L15.8677 21.6974L17.2969 20.3851L18.8051 22.1117C19.4132 20.1345 20.9961 18.601 22.9762 18.1044L22.619 15.7173L19.3491 13.6105L20.3698 11.9449L23.353 13.8669L27.9553 9L29.3327 10.3693L24.5212 15.4575ZM24.3655 19.9006C24.2853 19.9006 24.2058 19.903 24.1271 19.9079C22.079 20.0337 20.4546 21.7786 20.4546 23.9125C20.4546 24.046 20.4609 24.1777 20.4732 24.3074C20.666 26.3376 22.336 27.9244 24.3655 27.9244C26.5251 27.9244 28.2764 26.1286 28.2764 23.9125C28.2764 21.6964 26.5251 19.9006 24.3655 19.9006Z" fill="#EB517A"/>
-                            </g>
-                            <defs>
-                                <filter id="filter0_d_357_324" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                    <feMorphology radius="4" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_357_324"/>
-                                    <feOffset/>
-                                    <feComposite in2="hardAlpha" operator="out"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.15 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_357_324"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_357_324" result="shape"/>
-                                </filter>
-                            </defs>
+                <button class="carousel-control-prev" type="button" data-bs-target="#applications-carousel"
+                    data-bs-slide="prev">
+                    <span aria-hidden="true">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="20" fill="white" fill-opacity="0.1" />
+                            <path d="M23 14L17 20L23 26" stroke="white" stroke-opacity="0.4" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                        <p class="text-start">
-                            NetPyNE. Develop, simulate and analyse detailed neuronal network models using an intuitive graphical user interface.
-                        </p>
-                        <a class="transparent-btn">Learn more</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/cloud-based.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-flex">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g filter="url(#filter0_d_357_324)">
-                                <rect x="4" y="4" width="40" height="40" rx="12" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5212 15.4575L24.8953 17.9578C27.5476 18.2028 29.6874 20.2699 30.1165 22.9289H36V24.896H30.1165C29.7092 27.4198 27.761 29.4103 25.296 29.8158L25.2411 31.5163L27.8426 32.8888L26.9648 34.638L25.1709 33.6915L25.0284 39L23.1109 38.9349L23.1613 36.4779L20.7149 38.793L19.4137 37.3475L23.2505 33.7165L23.3767 29.8059C21.4907 29.4755 19.9143 28.216 19.1103 26.5028L16.5607 29.7759L12 28.3427L12.5622 26.4619L15.8757 27.5032L18.2625 24.439L15.8677 21.6974L17.2969 20.3851L18.8051 22.1117C19.4132 20.1345 20.9961 18.601 22.9762 18.1044L22.619 15.7173L19.3491 13.6105L20.3698 11.9449L23.353 13.8669L27.9553 9L29.3327 10.3693L24.5212 15.4575ZM24.3655 19.9006C24.2853 19.9006 24.2058 19.903 24.1271 19.9079C22.079 20.0337 20.4546 21.7786 20.4546 23.9125C20.4546 24.046 20.4609 24.1777 20.4732 24.3074C20.666 26.3376 22.336 27.9244 24.3655 27.9244C26.5251 27.9244 28.2764 26.1286 28.2764 23.9125C28.2764 21.6964 26.5251 19.9006 24.3655 19.9006Z" fill="#EB517A"/>
-                            </g>
-                            <defs>
-                                <filter id="filter0_d_357_324" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                    <feMorphology radius="4" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_357_324"/>
-                                    <feOffset/>
-                                    <feComposite in2="hardAlpha" operator="out"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.15 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_357_324"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_357_324" result="shape"/>
-                                </filter>
-                            </defs>
+                    </span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#applications-carousel"
+                    data-bs-slide="next">
+                    <span aria-hidden="true">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="20" fill="white" fill-opacity="0.1" />
+                            <path d="M17 26L23 20L17 14" stroke="white" stroke-opacity="0.4" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                        <p class="text-start">
-                            NetPyNE. Develop, simulate and analyse detailed neuronal network models using an intuitive graphical user interface.
-                        </p>
-                        <a class="transparent-btn">Learn more</a>
-                    </div>
-                </div>
+                    </span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                <span aria-hidden="true">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="40" rx="20" fill="white" fill-opacity="0.1"/>
-                    <path d="M23 14L17 20L23 26" stroke="white" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                </span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                <span aria-hidden="true">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="40" rx="20" fill="white" fill-opacity="0.1"/>
-                    <path d="M17 26L23 20L17 14" stroke="white" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                </span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
 
 
+
 </section>
-
-
-    <section class="get-started-section">
+      <section class="get-started-section">
     <div class="container-fluid build-future">
         <div class="row overflow-hidden p-3 p-md-5 text-center">
             <div class="col-xs-12 col-lg-10 mx-auto">
@@ -349,6 +393,8 @@
     </div>
 </section>
 
+    </div>
+    
     <div class="container-fluid px-0">
     <footer>
         <div class="container">

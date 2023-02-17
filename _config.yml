@@ -1,8 +1,8 @@
 url: https://metacell.github.io
-baseurl: /
+baseurl: /OSB_homepage
 
 # Site settings
-title: OSB
+title: Open Source Brain
 email: info@metacell.org
 description: ''
 githubLink: https://github.com/OpenSourceBrain/OSB_homepage

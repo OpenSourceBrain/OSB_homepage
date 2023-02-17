@@ -347,7 +347,7 @@ header .container {
 
 .main-section {
     margin-top: 36px;
-    background: url(img/Framebg.png);
+    background: url(img/framebg.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -571,12 +571,31 @@ h1.overview-section-title {
 
 /*FEATURES*/
 
-.features-section {
-    background-image: url(img/carouselBG.jpg);
+.layout-bottom{
+    background-image: url(img/bottom-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+  
+
 }
+
+
+
+.carousel-wrapper {
+    background-image: url(img/slideshows-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-position-y: -110px;
+    background-position-x: 5px;    /* */
+    padding-top: 60px;
+    width: 120%;
+    margin-left: -10%;
+
+
+}
+
+
 
 .features-section .carousel-caption {
     display: flex;
@@ -604,6 +623,16 @@ h1.overview-section-title {
 
 }
 
+.carousel-inner {
+
+
+}
+
+.carousel-item-inner{
+    padding: 0 22%;
+}
+
+
 .features-section .carousel-control-prev {
    left: -15%;
 }
@@ -615,15 +644,10 @@ h1.overview-section-title {
 
 /*GET STARTED*/
 .get-started-section {
-    background-image: url(img/getStartedBG.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    height: 1300px;
     display: flex;
+    margin-top: 300px;
     justify-content: center;
     align-items: flex-end;
-    background-size: cover;
-
 }
 .build-future {
     padding-top: 40px;
