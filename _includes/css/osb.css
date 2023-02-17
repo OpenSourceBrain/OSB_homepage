@@ -103,7 +103,6 @@ p.large {
 .highlighted-btn {
     padding: 10px 24px;
     /* gradient 2 */
-    background: linear-gradient(90.05deg, #88AA00 0.01%, #00BCD4 99.94%);
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.15), 0px 8px 8px -4px rgba(0, 0, 0, 0.1), 0px 12px 12px -4px rgba(0, 0, 0, 0.1), inset 0px -2px 2px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
     border: 0;
@@ -114,6 +113,15 @@ p.large {
     line-height: 32px;
     text-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.4);
     text-decoration: none;
+
+    background: linear-gradient(90.05deg, #88AA00 0.01%, #00BCD4 99.94%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.highlighted-btn:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(90.05deg, #88AA00 0.01%, #00BCD4 99.94%);
 }
 
 .highlighted-btn:hover {
@@ -510,13 +518,6 @@ h1.overview-section-title {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFFFF', GradientType=1 );
 }
 
-/*.cloud-base-section .cloud-base-section-top {*/
-/*    background-image: url(img/cloudBaseBG.png);*/
-/*    background-repeat: no-repeat;*/
-/*    !*background-size: cover;*!*/
-/*    background-position-y: center;*/
-/*}*/
-
 .cloud-base-section .cloud-base-title {
     font-weight: 700;
     font-size: 14px;
@@ -533,19 +534,6 @@ h1.overview-section-title {
 .cloud-base-section .cloud-base-image-card {
     position: relative;
 }
-
-/*.cloud-base-section .cloud-base-image-card:before {*/
-/*    content: " ";*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    background: rgba(64, 71, 88, 0.4);*/
-/*    box-shadow: 0px -4px 20px #0A101E;*/
-/*    border-radius: 12px;*/
-/*    border: 1px solid;*/
-/*}*/
 
 .cloud-base-section .cloud-base-description {
     font-weight: 700;
