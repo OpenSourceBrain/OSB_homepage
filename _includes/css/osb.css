@@ -597,7 +597,7 @@ h1.overview-section-title {
     padding-top: 60px;
     width: 120%;
     margin-left: -10%;
-
+    backdrop-filter: blur(4px);
 
     
 }
@@ -609,13 +609,12 @@ h1.overview-section-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 0;
-    right: 0;
-    bottom: -90px;
+
     /* box-shadow: inset 0px -54px 40px -20px #08121F, 0px 34px 40px 0px #08121F; */
     border-radius: 10px;
     padding: 15px 15px;
     color: #FFFFFF;
+    position: static;
 }
 .features-section .carousel-caption p{
     font-size: 16px;
