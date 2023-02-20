@@ -15,7 +15,7 @@
     {% include footer.html %}
     {% include js.html %}
 
-    <!-- {% if site.google_analytics %} -->
+     {% if site.googleAnalytics %}
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id={{site.googleAnalytics}}"></script>
       <script>
@@ -25,6 +25,7 @@
 
         gtag('config', '{{site.googleAnalytics}}');
       </script>
-    <!-- {% endif %} -->
+      
+     {% endif %}
     </body>
 </html>
