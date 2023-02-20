@@ -185,7 +185,7 @@ p.large {
 
 .nav-link:focus, .nav-link:hover {
     opacity: 0.9;
-    
+
 }
 
 .transparent-btn:hover {
@@ -588,7 +588,7 @@ h1.overview-section-title {
     background-image: url(img/bottom-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-  
+
 
 }
 
@@ -606,12 +606,16 @@ h1.overview-section-title {
     margin-left: -10%;
     backdrop-filter: blur(4px);
 
-    
+
 }
 
+.tabs-container .nav-tabs{
+    border-bottom: 0;
+}
 
-
-
+.tabs-container .nav{
+    justify-content: center;
+}
 .features-section .carousel-caption {
     display: flex;
     align-items: center;
@@ -627,7 +631,7 @@ h1.overview-section-title {
     font-size: 16px;
     font-weight: 400;
     color: #FFFFFF;
-    
+
 }
 
 .features-section .carousel-caption p>span:last-child{
@@ -665,11 +669,11 @@ h1.overview-section-title {
 .carousel-item-inner{
     margin: 0 22%;
     position: relative;
-    
+
 }
 
 .carousel-item-inner .image-wrapper {
-   
+
     width: 86%;
     margin-left: 7%;
     height: 240px;
@@ -678,7 +682,7 @@ h1.overview-section-title {
 .carousel-item img{
     width: 100%;
     opacity: 0.7;
-    
+
 
 }
 
