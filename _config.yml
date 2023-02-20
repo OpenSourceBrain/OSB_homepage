@@ -18,3 +18,5 @@ collections:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+googleAnalytics: G-7WB9DSRE52
