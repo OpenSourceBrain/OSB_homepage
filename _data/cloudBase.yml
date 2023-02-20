@@ -7,3 +7,4 @@ Workspaces: Workspaces
 WorkspacesDesc: are persistent online spaces where users can carry out and save their work. They can be private or shared with the community
 Applications: Applications
 ApplicationsDesc: Open your workspaces in any of the supported OSB applications, such as NWB Explorer, NetPyNE and JupyterLab
+image: img/cloud-based.png
