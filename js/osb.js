@@ -15,7 +15,6 @@ $('#features-carousel').on('slid.bs.carousel', function onSlide (ev) {
     activeTab.classList.remove('active')
     activeTab.setAttribute('aria-selected', 'false')
     const newActiveTab = document.getElementById(newActiveTabId)
-
     newActiveTab.classList.add('active')
     newActiveTab.setAttribute('aria-selected', 'true')
 })
