@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Page moved</title>
+      
+   </head>
+   <body>
+      <p>Page not found</p>
+      <script>
+        const newUrl = window.location.href.replace("www.", "");
+        if (newUrl !== window.location.href) {
+            window.location.href = newUrl;
+        }
+         
+      </script>
+   </body>
+</html>
