@@ -770,4 +770,11 @@ h1.overview-section-title {
     }
 }
 
+@-moz-document url-prefix() {
+    .main-section {
+        -webkit-mask-image: none;
+    }
+}
+
+
 
