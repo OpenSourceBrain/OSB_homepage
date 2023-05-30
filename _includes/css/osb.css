@@ -762,3 +762,10 @@ h1.overview-section-title {
         max-width: 1100px;
     }
 }
+
+@-moz-document url-prefix() {
+    .main-section {
+        -webkit-mask-image: none;
+    }
+}
+
