@@ -19,7 +19,7 @@ ProductLinks: [
   },
   {
     name: "OSBv1",
-    href: "https://www.opensourcebrain.org",
+    href: "https://v1.opensourcebrain.org",
   },
 ]
 
