@@ -5,13 +5,15 @@
       
    </head>
    <body>
-      <p>Page not found</p>
+      <p>Page not found -- redirecting</p>
       <script>
-        const newUrl = window.location.href.replace("www.", "");
-        if (newUrl !== window.location.href) {
-            window.location.href = newUrl;
+        const v1AddressMatches = ["login", "account", "projects", "docs"]
+        for(const address of v1AddressMatches) {
+         if(window.location.pathname.includes(address)) {
+            window.location.href = window.location.href.replace("opensourcebrain.org", "v1.opensourcebrain.org")
+         }
         }
-         
+        
       </script>
    </body>
 </html>
