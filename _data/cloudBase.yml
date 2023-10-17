@@ -12,4 +12,4 @@ WorkspacesDesc: are persistent online spaces where users can carry out and save 
 Applications: Applications
 ApplicationsLink: https://docs.opensourcebrain.org/OSBv2/Applications.html
 ApplicationsDesc: Open your workspaces in any of the supported OSB applications, such as NWB Explorer, NetPyNE and JupyterLab
-image: img/cloud-based.png
+image: img/userpage.png
