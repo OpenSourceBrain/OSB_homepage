@@ -78,5 +78,12 @@ sliderData: [
     text: "A general purpose Python integrated development environment with the libraries you need preinstalled.",
     link: "https://docs.opensourcebrain.org/OSBv2/JupyterLab.html",
     icon:  "img/Jupyterlogo.png"
+  },{
+    image: "img/OSBv1.png",
+    alt: "OSBv1",
+    title: "OSBv1.",
+    text: "The OSBv1 3D interface is still available for visualizing and running NeuroML models.",
+    link: "https://v1.opensourcebrain.org/",
+    icon:  "img/osblogo.png"
   }
 ]
