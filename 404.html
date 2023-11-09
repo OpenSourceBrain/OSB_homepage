@@ -7,7 +7,7 @@
    <body>
       <p>Page not found -- trying to redirect...</p>
       <script>
-        const v1AddressMatches = ["login", "account", "projects", "docs", "users", "admin", "settings"]
+        const v1AddressMatches = ["login", "account", "projects", "docs", "users", "admin", "settings", "about"]
         for(const address of v1AddressMatches) {
          if(window.location.pathname.includes(address)) {
             window.location.href = window.location.href.replace("opensourcebrain.org", "v1.opensourcebrain.org")
