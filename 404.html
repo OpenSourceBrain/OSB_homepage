@@ -11,6 +11,7 @@
         for(const address of v1AddressMatches) {
          if(window.location.pathname.includes(address)) {
             window.location.href = window.location.href.replace("opensourcebrain.org", "v1.opensourcebrain.org")
+            window.location.href = window.location.href.replace("www.", "")
          }
         }
         if(window.location.pathname.includes("workspaces")) {
