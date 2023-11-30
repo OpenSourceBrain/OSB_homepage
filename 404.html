@@ -10,8 +10,12 @@
         const v1AddressMatches = ["login", "account", "projects", "docs", "users", "admin", "settings", "about"]
         for(const address of v1AddressMatches) {
          if(window.location.pathname.includes(address)) {
-            window.location.href = window.location.href.replace("opensourcebrain.org", "v1.opensourcebrain.org")
-            window.location.href = window.location.href.replace("www.", "")
+            if (window.location.href.includes("www")) {
+               window.location.href = window.location.href.replace("www.opensourcebrain.org", "v1.opensourcebrain.org")
+            }
+            else {
+               window.location.href = window.location.href.replace("opensourcebrain.org", "v1.opensourcebrain.org")
+            }
          }
         }
         if(window.location.pathname.includes("workspaces")) {
