@@ -1,31 +1,73 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  {% include head.html %}
+<html lang="{{ site.lang | default: " en-US" }}">
+{% include head.html %}
 
-    <body id="page-top" class="index">
-    {% include header.html %}
-    {% include main.html %}
-    {% include overview.html %}
-    {% include cloudBase.html %}
-    <div class="layout-bottom">
-      {% include features.html %}
-      {% include getStarted.html %}
-    </div>
+<body id="page-top" class="index">
+  {% include header.html %}
+  {% include main.html %}
+  {% include overview.html %}
+  {% include cloudBase.html %}
+  <div class="layout-bottom">
+    {% include features.html %}
+    {% include getStarted.html %}
+  </div>
 
-    {% include footer.html %}
-    {% include js.html %}
+  {% include footer.html %}
+  {% include js.html %}
 
-     {% if site.googleAnalytics %}
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{site.googleAnalytics}}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  {% if site.googleAnalytics %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{site.googleAnalytics}}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', '{{site.googleAnalytics}}');
-      </script>
+    gtag('config', '{{site.googleAnalytics}}');
+  </script>
+  <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+  <script>
+    var player = videojs('my-video', {
+      autoplay: 'true',
+      loop: 'true',
+      muted: 'true'
+    }).player();
+    const controlBar = player.getChild('ControlBar');
+    controlBar.addClass('vjs-hidden')
 
-     {% endif %}
-    </body>
+    const playSoundButton = document.querySelector('.play-sound-button')
+    const openFullScreenButton = document.querySelector('.open-full-screen-button')
+
+    function hideButtonsAndShowControlBar() {
+        player.currentTime(0)
+        playSoundButton.style.display = "none";
+        openFullScreenButton.style.display = "none";
+        controlBar.removeClass('vjs-hidden');
+    }
+
+    playSoundButton.addEventListener("click", () => {
+      player.muted(false)
+      hideButtonsAndShowControlBar()
+    });
+
+    openFullScreenButton.addEventListener("click", () => {
+      player.requestFullscreen()
+      hideButtonsAndShowControlBar()
+    });
+
+    player.on('fullscreenchange', function () {
+      const video = document.getElementById('my-video');
+
+      if (document.fullscreenElement === video || document.webkitFullscreenElement === video || document.mozFullScreenElement === video) {
+        video.classList.add('fullscreen-video');
+      } else {
+        video.classList.remove('fullscreen-video');
+      }
+    });
+
+
+  </script>
+  {% endif %}
+</body>
+
 </html>
