@@ -30,7 +30,8 @@
     var player = videojs('my-video', {
       autoplay: 'true',
       loop: 'true',
-      muted: 'true'
+      muted: 'true',
+      fluid: 'true'
     }).player();
     const controlBar = player.getChild('ControlBar');
     controlBar.addClass('vjs-hidden')
