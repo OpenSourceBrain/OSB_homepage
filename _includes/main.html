@@ -5,19 +5,50 @@
             <div class="col-xs-12">
                 <h1 class="display-5 mb-5 page-title">{{site.data.main.mainTitle1}} <br> <span>{{site.data.main.mainTitle2}}</span> </h1>
             </div>
-            <div class="col-xs-12 col-md-6 text-center">
-                <p class="lead fw-normal mb-5 brief">{{site.data.main.brief}}</p>
-            </div>
-            <div class="col-xs-12">
-                <div class='highlighted-btn-container mb-70'>
-                    <a class="highlighted-btn" href="{{site.data.main.guidedTourLink}}" target="_blank">{{site.data.main.guidedTour}}</a>
-                </div>
-            </div>
-            <div class="col-xs-12">
+            <div class="col-xs-12 mb-5">
                 <div class="workspaces-list-container">
-                    <a href="{{site.data.main.getStartedLink}}"><img src="img/workspacesList.png"></a>
+                    <video id="my-video" class="video-js" controls preload="auto" data-setup="{}" poster="../img/osb-video-poster.png">
+                        <source src="{{site.data.main.osbExplainerVideoLink}}" type="video/mp4">
+                    </video>
+                    <div class="video-action-buttons">
+                        <button class="play-sound-button">
+                            Play with sound
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M13.3334 22L21.3334 16L13.3334 9.99996V22ZM16 2.66663C8.64002 2.66663 2.66669 8.63996 2.66669 16C2.66669 23.36 8.64002 29.3333 16 29.3333C23.36 29.3333 29.3334 23.36 29.3334 16C29.3334 8.63996 23.36 2.66663 16 2.66663ZM16 26.6666C10.12 26.6666 5.33335 21.88 5.33335 16C5.33335 10.12 10.12 5.33329 16 5.33329C21.88 5.33329 26.6667 10.12 26.6667 16C26.6667 21.88 21.88 26.6666 16 26.6666Z" fill="white" fill-opacity="0.8"/>
+                            </svg>
+                        </button>
+                        <button class="open-full-screen-button">
+                            Open in full screen
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 5.33332C21.88 5.33332 26.6667 10.12 26.6667 16C26.6667 21.88 21.88 26.6667 16 26.6667C10.12 26.6667 5.33334 21.88 5.33334 16C5.33334 10.12 10.12 5.33332 16 5.33332ZM16 2.66666C8.64001 2.66666 2.66667 8.63999 2.66667 16C2.66667 23.36 8.64001 29.3333 16 29.3333C23.36 29.3333 29.3333 23.36 29.3333 16C29.3333 8.63999 23.36 2.66666 16 2.66666ZM18.5067 15.3867L11.8933 22L10.0133 20.12L16.6267 13.5067L13.7867 10.6667L21.32 10.68L21.3333 18.2133L18.5067 15.3867Z" fill="white" fill-opacity="0.8"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
+            <div class="row gy-5 overflow-hidden py-3 justify-content-between guided-tour-container">
+                <div class="col-xs-0 col-md-6 col-lg-8">
+                    <div class="image-container">
+                        <img width="100%" src="img/workspacesList.png">
+                    </div>
+                </div>
+                <div class="col-xs-10 col-md-6 col-lg-4">
+                    <div class="row overflow-hidden p-3 text-start">
+                        <div class="col-xs-12">
+                            <h6 class="mb-4 guided-tour-title">{{site.data.main.guidedTourTitle}}</h6>
+                        </div>
+                        <div class="col-xs-12">
+                            <h6 class="display-5 mb-4 guided-tour-brief">{{site.data.main.guidedTourBrief}}</h6>
+                        </div>
+                        <div class="col-xs-12 mb-5">
+                            <span class="lead fw-normal mb-5 guided-tour-desc">{{site.data.main.desc}}</span>
+                        </div>
+                        <div class="col-xs-12">
+                            <a class="highlighted-btn" href="{{site.data.main.guidedTourLink}}" target="_blank">{{site.data.main.guidedTour}}</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
     </div>
 </header>
