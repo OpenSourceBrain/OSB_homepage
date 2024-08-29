@@ -28,32 +28,42 @@
   <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
   <script>
     var player = videojs('my-video', {
-      autoplay: 'true',
-      loop: 'true',
-      muted: 'true',
+      autoplay: false,
+      loop: false,
+      muted: false,
       fluid: 'true'
     }).player();
     const controlBar = player.getChild('ControlBar');
     controlBar.addClass('vjs-hidden')
 
-    const playSoundButton = document.querySelector('.play-sound-button')
+    //const playSoundButton = document.querySelector('.play-sound-button')
     const openFullScreenButton = document.querySelector('.open-full-screen-button')
 
     function hideButtonsAndShowControlBar() {
+        console.log("hideButtonsAndShowControlBar pressed")
         player.currentTime(0)
-        playSoundButton.style.display = "none";
+        //playSoundButton.style.display = "none";
         openFullScreenButton.style.display = "none";
         controlBar.removeClass('vjs-hidden');
     }
 
+    /*
     playSoundButton.addEventListener("click", () => {
       player.muted(false)
+      console.log("playSoundButton clicked")
       hideButtonsAndShowControlBar()
-    });
+    });*/
 
     openFullScreenButton.addEventListener("click", () => {
       player.requestFullscreen()
       hideButtonsAndShowControlBar()
+    });
+
+    player.on('play', () => { 
+      console.log("main play button clicked") 
+      if (openFullScreenButton.style.display != "none") {
+        hideButtonsAndShowControlBar();
+      }
     });
 
     player.on('fullscreenchange', function () {
