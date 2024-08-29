@@ -6,17 +6,21 @@ links: [
   {
     name: "Home",
     href: "#",
+    target: "_self",
   },
   {
     name: "Docs",
     href: "https://docs.opensourcebrain.org",
+    target: "_blank",
   },
   {
     name: "FAQ",
     href: "https://docs.opensourcebrain.org/General/FAQ.html",
+    target: "_blank",
   },
   {
     name: "Contact",
     href: "https://docs.opensourcebrain.org/General/Contacts.html",
+    target: "_blank",
   },
 ]
