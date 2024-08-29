@@ -3,7 +3,7 @@ metacellLink: https://metacell.us
 Product: OSB Platform
 ProductLinks: [
   {
-    name: "Home",
+    name: "OSBv2",
     href: "https://v2.opensourcebrain.org",
   },
   {
@@ -63,7 +63,7 @@ GettingStartedLinks: [
 Contact: Contact
 ContactLinks: [
   {
-    name: "Twitter",
+    name: "Twitter/X",
     href: "https://twitter.com/OSBTeam",
   },
   {
